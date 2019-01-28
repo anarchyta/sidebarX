@@ -1,0 +1,115 @@
+.page-container{min-height:100%;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex}
+.page-container:not(.container){width:100%}
+.page-header{padding-bottom:0;margin:0;border-bottom:none;height:81px;position:relative;padding-top:25px;padding-right:25px;background:#fff}
+.page-header-fixed .page-header{position:fixed;z-index:99;left:240px;right:0;top:0}
+.page-header-fixed .page-container.container .page-header{padding-right:15px;padding-left:195px;left:0;right:0;margin:auto}
+.page-header-fixed.page-sidebar-collapsed .page-container.container .page-header{padding-right:15px;padding-left:75px;left:0;right:0;margin:auto}
+@media (min-width: 768px) {
+.page-header-fixed .page-container.container .page-header{width:750px}
+}
+@media (min-width: 992px) {
+.page-header-fixed .page-container.container .page-header{width:970px}
+}
+@media (min-width: 1200px) {
+.page-header-fixed .page-container.container .page-header{width:1170px}
+}
+.page-sidebar-collapsed.page-header-fixed .page-header{left:60px}
+.page-header .form-control{background-color:#fff;color:#fff}
+.page-header .form-control::placeholder{color:#cfd8e7}
+.page-sidebar-fixed .page-header{z-index:41}
+.page-header .navbar-default{background-color:#fff;border:0;margin-bottom:0;height:56px;border-radius:0}
+.page-header .navbar-default .container-fluid,.page-header .navbar-default .navbar-collapse{height:56px!important}
+.page-header .navbar-default .navbar-brand i.fixed-sidebar-button-active{background:#fff}
+.page-header .navbar-nav > li.v-divider{display:block;width:1px;height:26px;background:#F3F3F3;margin:21px 15px}
+.page-header .navbar-nav > li > a{padding-top:20px;padding-bottom:20px;height:56px;color:#4F4F4F;font-size:11px;text-transform:uppercase}
+.page-header .navbar-nav > li > a:hover,.page-header .navbar-nav > li > a:link,.page-header .navbar-nav > li > a:focus{color:#637282!important}
+.page-header .navbar-nav > li > a > img{width:36px;margin-top:-10px;display:inline-block;vertical-align:top}
+.page-header .navbar-nav > li.user-dropdown > a{margin-right:0}
+.open:not(.active-page) > a{color:#2b2b2b;font-weight:500}
+.active-page.open > a{font-weight:500}
+.active-page.open > a i{color:#2b2b2b}
+.navbar-default .navbar-nav > .open > a,.navbar-default .navbar-nav > .open > a:focus,.navbar-default .navbar-nav > .open > a:hover{color:#1f2229;background-color:transparent}
+.page-header .navbar-collapse{padding-right:0;padding-left:0;overflow-x:visible}
+@media (min-width: 768px) {
+.navbar-nav{float:left;margin-left:0;margin-right:0;padding:0}
+.page-header .navbar-nav > li > a > i{font-size:14px;vertical-align:text-top}
+.page-header .navbar-nav > li > a > i[class^="icon-"]{font-size:19px;vertical-align:top}
+}
+.page-sidebar{width:240px;background:#F7F9FA;min-height:100%;float:left;z-index:100;position:relative}
+.page-sidebar-fixed .page-sidebar{position:fixed;top:0;bottom:0;z-index:100;height:100%!important}
+.page-sidebar-fixed .page-sidebar .page-sidebar-inner{height:100%!important;overflow:hidden}
+body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv{height:auto!important}
+.page-sidebar-fixed .page-sidebar,.page-header-fixed .page-sidebar,.page-sidebar-fixed.page-header-fixed .page-sidebar{padding-top:81px}
+.logo-box{width:240px;padding:40px 40px 11px;color:#0070E0!important;background:#F7F9FA;font-weight:800;font-size:18px;display:block;text-decoration:none;z-index:9999;text-transform:uppercase;line-height:30px}
+.page-header-fixed .logo-box{position:fixed;top:0}
+.logo-box:hover,.logo-box:active,.logo-box:link,.logo-box:focus{color:#fff;text-decoration:none}
+.logo-box i{margin-left:12px;float:right;height:14px;margin-top:9px;font-size:13px}
+.page-sidebar-fixed .logo-box{position:fixed;left:auto;border-bottom:none;z-index:9999;top:0;color:#fff}
+.page-sidebar-menu{margin-top:10px}
+.page-sidebar-fixed .page-sidebar .accordion-menu{margin-top:10px}
+.page-sidebar-menu ul{padding:0;margin:0}
+.page-sidebar-menu ul li{list-style-type:none;position:relative}
+.page-sidebar-menu ul li a{display:block;font-weight:400;font-size:14px;padding:9px 40px;color:#596B8C;line-height:1.5!important;-webkit-font-smoothing:antialiased;position:relative}
+.page-sidebar-menu ul li.active-page > a i{color:#0070E0}
+.page-sidebar-menu ul li.active-page > a i.accordion-icon{color:#0070E0}
+.page-sidebar-menu ul li.active-page > a{color:#0070E0;font-weight:500;position:relative}
+.page-sidebar-menu ul li a:link{text-decoration:none}
+.page-sidebar-menu > ul > li > a:hover{opacity:.8}
+.page-sidebar-collapsed .page-sidebar-menu > ul > li > a:hover{opacity:1}
+.page-sidebar-menu > ul > li > a:hover,.page-sidebar-menu > ul > li > a:hover i.accordion-icon{text-decoration:none}
+.page-sidebar-menu ul li a i.menu-icon{margin-right:10px;font-size:17px;vertical-align:middle;line-height:22px}
+.page-sidebar-menu ul li a span{vertical-align:middle}
+.page-sidebar-menu ul li.menu-divider{display:block;width:100%;height:1px;background-color:#E5E9EC;margin:10px 0}
+.page-sidebar-menu ul li a i.accordion-icon{float:right;font-size:15px;vertical-align:text-top;color:#596B8C;-webkit-transition:all .2s;-moz-transition:all .2s;-o-transition:all .2s;transition:all .2s;margin-top:3px}
+.page-sidebar-menu ul li a span.label{margin:3px 0;float:right}
+.page-sidebar-menu ul li.open a i.accordion-icon{-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=-3)}
+.page-sidebar-menu ul li .sub-menu a:hover{color:#000}
+.accordion-menu .sub-menu{display:none;padding-left:22px;padding-bottom:8px;background:#F7F9FA}
+.page-sidebar-collapsed .accordion-menu .sub-menu{padding-bottom:0;padding-left:0}
+.accordion-menu .sub-menu li:not(.animation) a{opacity:0}
+.accordion-menu .sub-menu li.animation a{opacity:1}
+.accordion-menu .sub-menu li a{border-top:0;padding:7px 20px 7px 45px;font-size:13px;color:#596B8C}
+.accordion-menu .sub-menu li a.active{color:#000}
+.accordion-menu .sub-menu li a.active:hover{color:#000!important}
+.page-sidebar-collapsed .page-sidebar,.page-sidebar-collapsed .logo-box{width:60px}
+.page-sidebar-collapsed.page-sidebar-fixed .page-sidebar{height:100%}
+.page-sidebar-collapsed .logo-box{padding:40px 10px 11px;text-align:center;height:81px}
+.page-sidebar-collapsed .logo-box span{display:none}
+.page-sidebar-collapsed .logo-box i{margin:9px auto;float:none}
+.page-sidebar-collapsed:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv{overflow:visible!important;height:calc(100% - 83px)!important}
+.page-sidebar-collapsed .page-sidebar .page-sidebar-inner{height:100%;overflow-y:hidden!important;overflow-x:visible!important}
+.page-sidebar .slimScrollBar{display:none!important}
+.page-sidebar-collapsed .page-sidebar-menu > ul > li{width:60px;position:relative}
+.page-sidebar-collapsed .page-sidebar-menu > ul > li > a{width:60px;padding:14px 21.5px;position:relative}
+.page-sidebar-collapsed .page-sidebar-menu > ul > li > a > i.menu-icon{margin-right:20.5px}
+.page-sidebar-collapsed .page-sidebar-menu ul li .sub-menu,.page-sidebar-collapsed .page-sidebar-menu ul li.active-page .sub-menu,.page-sidebar-collapsed .page-sidebar-menu ul li.open .sub-menu{display:none!important;width:170px}
+.page-sidebar-collapsed .page-sidebar-menu ul li a span:not(.label){padding-left:25px}
+.page-sidebar-collapsed .page-sidebar-menu ul li a span,.page-sidebar-collapsed .page-sidebar-menu ul li a i.accordion-icon{display:none}
+.page-sidebar-collapsed .page-sidebar-menu ul li .sub-menu{position:absolute;left:60px;z-index:9999;padding-bottom:14px}
+.page-sidebar-collapsed .page-sidebar-menu ul li .sub-menu a{opacity:1;padding:8px 25px}
+.page-sidebar-collapsed .page-sidebar-menu ul li a:hover + .sub-menu,.page-sidebar-collapsed .page-sidebar-menu ul li .sub-menu:hover,.page-sidebar-collapsed .page-sidebar-menu ul li:hover a span,.page-sidebar-collapsed .page-sidebar-menu ul li a:hover span{display:inline!important}
+.page-sidebar-collapsed .page-sidebar-menu > ul > li:hover > a{width:230px;background:#f7f7f7}
+.page-sidebar-collapsed .page-sidebar.fixed-sidebar-scroll .slimScrollDiv{width:260px!important}
+.search-form{left:0;right:0;position:absolute;background:#fff;height:56px;z-index:41;margin-top:-81px;-webkit-transition:all .2s;-moz-transition:all .2s;-o-transition:all .2s;transition:all .2s;font-weight:400;opacity:0}
+.search-form input{border:none;height:56px;border-radius:0;box-shadow:none;padding-left:25px;padding-bottom:7px;color:#3d464c!important}
+.search-form #close-search{background-color:#fff;color:#637282;border:none;height:44px;border-radius:50%;box-shadow:none;margin:0 40px 6px 0;padding:0 12px}
+.search-form #close-search i{font-size:20px;vertical-align:text-top}
+.search-form input:focus{border:none;box-shadow:none}
+.search-form #close-search:hover,.search-form #close-search:focus{background-color:#f1f1f1!important;opacity:1;border:none;outline:0;box-shadow:none}
+.search-content{position:absolute;background:#fff}
+.search-open .search-form{margin-top:0;opacity:1}
+.dataTables_wrapper .dataTables_filter input{box-shadow:none!important;border:1px solid #C1C7CD;color:#646464;border-radius:4px;padding:5px 12px;height:32px}
+.dataTables_wrapper .dataTables_filter input:focus{outline:0;outline-offset:0}
+.page-content{min-height:56px;vertical-align:bottom;background:#fff;width:calc(100% - 240px);float:right}
+.page-sidebar-collapsed .page-content{width:calc(100% - 60px)}
+.page-sidebar-fixed .page-content{margin-left:240px}
+.page-sidebar-fixed.page-sidebar-collapsed .page-content{margin-left:60px}
+_::-webkit-full-page-media,_:future,:root .page-content{vertical-align:top}
+.page-inner{position:relative;min-height:calc(100% - 81px);padding:5px 40px 42px 30px;background:#fff}
+.page-inner.no-page-title{padding-top:30px}
+.page-inner.full-page{padding-left:0;padding-right:0;padding-top:0}
+.page-inner.full-page.no-footer{padding-bottom:0}
+.page-inner.full-page .page-footer{padding-left:30px;padding-right:30px}
+_::-webkit-full-page-media,_:future,:root .page-inner{padding-bottom:0}
+.page-header-fixed .page-inner{margin-top:81px}
+.page-footer{position:absolute;bottom:0}
