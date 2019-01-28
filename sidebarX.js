@@ -208,40 +208,8 @@ $(document).ready(function () {
   };
 
 
-  // Fulscreen Function
-  function toggleFullScreen() {
-    if (!document.fullscreenElement && // alternative standard method
-      !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) { // current working methods
-      if (document.documentElement.requestFullscreen) {
-        document.documentElement.requestFullscreen();
-      } else if (document.documentElement.msRequestFullscreen) {
-        document.documentElement.msRequestFullscreen();
-      } else if (document.documentElement.mozRequestFullScreen) {
-        document.documentElement.mozRequestFullScreen();
-      } else if (document.documentElement.webkitRequestFullscreen) {
-        document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-      }
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-      }
-    }
-  };
-
   // Navbar
   var navbar_init = function () {
-
-    $('#toggle-fullscreen').on('click', function () {
-      toggleFullScreen();
-      return false;
-
-    });
 
     $('#search-button').on('click', function () {
       body.toggleClass('search-open')
@@ -254,36 +222,6 @@ $(document).ready(function () {
       body.toggleClass('search-open')
     });
 
-  };
-
-  // Right Sidebar
-  var right_sidebar = function () {
-    $('.right-sidebar-toggle').on('click', function () {
-      var sidebarId = $(this).data("sidebar-id");
-      $('#' + sidebarId).toggleClass('visible');
-    });
-
-    var write_message = function () {
-      $(".chat-write form input").on('keypress', function (e) {
-        if ((e.which === 13) && (!$(this).val().length === 0)) {
-          if ($('.right-sidebar-chat .chat-bubbles .chat-bubble:last-child').hasClass('me')) {
-
-            $('<span class="chat-bubble-text">' + $(this).val() + '</span>').insertAfter(".right-sidebar-chat .chat-bubbles .chat-bubble:last-child span:last-child");
-          } else {
-            $('<div class="chat-bubble me"><div class="chat-bubble-text-container"><span class="chat-bubble-text">' + $(this).val() + '</span></div></div>').insertAfter(".right-sidebar-chat .chat-bubbles .chat-bubble:last-child");
-          };
-          $(this).val('');
-        } else if (e.which === 13) {
-          return;
-        }
-        var scrollTo_int = $('.right-sidebar-chat').prop('scrollHeight') + 'px';
-        $('.right-sidebar-chat').slimscroll({
-          allowPageScroll: true,
-          scrollTo: scrollTo_int
-        });
-      });
-    };
-    write_message();
   };
 
   // Plugins
@@ -313,7 +251,6 @@ $(document).ready(function () {
   boxed_page();
   accordion_menu();
   navbar_init();
-  right_sidebar();
   plugins_init();
 
 });
