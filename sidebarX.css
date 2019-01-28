@@ -105,7 +105,7 @@ body:not(.page-sidebar-fixed) .page-sidebar .slimScrollDiv{height:auto!important
 .page-sidebar-fixed .page-content{margin-left:240px}
 .page-sidebar-fixed.page-sidebar-collapsed .page-content{margin-left:60px}
 _::-webkit-full-page-media,_:future,:root .page-content{vertical-align:top}
-.page-inner{position:relative;min-height:calc(100% - 81px);padding:5px 40px 42px 30px;background:#fff}
+.page-inner{position:relative;min-height:calc(100% - 81px);padding:5px 30px 40px 30px;background:#fff}
 .page-inner.no-page-title{padding-top:30px}
 .page-inner.full-page{padding-left:0;padding-right:0;padding-top:0}
 .page-inner.full-page.no-footer{padding-bottom:0}
@@ -113,3 +113,23 @@ _::-webkit-full-page-media,_:future,:root .page-content{vertical-align:top}
 _::-webkit-full-page-media,_:future,:root .page-inner{padding-bottom:0}
 .page-header-fixed .page-inner{margin-top:81px}
 .page-footer{position:absolute;bottom:0}
+#sidebar-toggle-button-close{display:none}
+.brand-logo{color: #0070E0!important;font-weight: 800;font-size: 18px}
+@media (max-width:991px){
+	.page-sidebar-collapsed{display:block}
+	.page-header-fixed .page-header{left:0}
+	.page-sidebar{position:fixed!important;left:-240px;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+	.page-inner:not(.login-page){padding:5px 40px 42px}
+	.page-content,.page-sidebar-collapsed .page-content{width:100%}
+	.page-sidebar-fixed .page-content,.page-sidebar-fixed.page-sidebar-collapsed .page-content{margin-left:0}
+	.page-header,.page-header .navbar,.page-header .navbar-default .container-fluid,.page-header .navbar-default .navbar-collapse{height:auto!important}
+	.page-sidebar-collapsed .logo-sm .logo-box{height:auto;display:block;padding-left:0;text-align:left}
+	.page-sidebar-fixed .logo-sm .logo-box{position:relative;z-index:40}.page-header{padding-left:25px}
+	.navbar .dropdown:not(.open) .dropdown-menu{display:none}
+	.navbar li{display:inline-block}
+	#fixed-sidebar-toggle-button,.navbar-nav.navbar-right{display:none}
+	.navbar-collapse{padding:0 25px!important}.navbar-nav{float:right}
+	.page-sidebar-visible .page-sidebar{left:0}
+	#sidebar-toggle-button-close{margin-left:12px;float:right;height:14px;font-size:18px;margin-top:6px;display:block}
+	.page-sidebar-collapsed #sidebar-toggle-button-close{margin:0 auto;float:none}
+}
