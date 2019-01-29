@@ -126,15 +126,14 @@
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;!-- /Page Sidebar --&gt;</code></pre>
-            <div class='page-title'>
-              <h3 class='breadcrumb-header'>Variable Options <small>Initialize the plugin and we're done.</small></h3>
-            </div>
-            <pre><code>$(document).sidebarX({
+
+<h3>Variable Options <small>Initialize the plugin and we're done.</small></h3>
+
+<pre><code>$(document).sidebarX({
       submenu_animation_speed: 100,
       submenu_opacity_animation: true,
       page_boxed: false,
       page_header_fixed: false,
       page_sidebar_fixed: false
       page_sidebar_collapsed: false
-});
-</code></pre>
+});</code></pre>
