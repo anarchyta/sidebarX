@@ -228,23 +228,6 @@ $(document).ready(function () {
   var plugins_init = function () {
     // Slimscroll
     $('.slimscroll').slimScroll();
-
-    // Uniform
-    var checkBox = $("input[type=checkbox]:not(.js-switch), input[type=radio]:not(.no-uniform)");
-    if (checkBox.length > 0) {
-      checkBox.each(function () {
-        $(this).uniform();
-      });
-    };
-
-    var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
-    elems.forEach(function (html) {
-      var switchery = new Switchery(html, {
-        size: 'small',
-        color: '#637282'
-      });
-    });
-
   };
 
   page_sidebar_init();
