@@ -1,22 +1,21 @@
-# sidebarX
-Minimal admin Sidebar with X
+<h3>How to use?</h3>
 
-            <div class='page-title'>
-              <h3 class='breadcrumb-header'>How to use?</h3>
-            </div>
-            <p>Add references to jQuery library and the jQuery sidebarX plugins files into the html page.</p>
-            <pre><code>&lt;link rel="stylesheet" href="assets/vendors/sidebarX.min.css"/&gt;
+<p>Add references to jQuery library and the jQuery sidebarX plugins files into the html page.</p>
+
+<pre><code>&lt;link rel="stylesheet" href="assets/vendors/sidebarX.min.css"/&gt;
 &lt;script type="text/javascript" src="assets/vendors/js/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="assets/vendors/js/bootstrap.min.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="assets/vendors/js/jquery.slimscroll.min.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="assets/sidebarX.min.js"&gt;&lt;/script&gt;</code></pre>
-            <p>You might need to load the Bootstrap Framework and Font Awesome icons.</p>
-            <pre><code>&lt;link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css"/&gt;
+
+<p>You might need to load the Bootstrap Framework and Font Awesome icons.</p>
+
+<pre><code>&lt;link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css"/&gt;
 &lt;link rel="stylesheet" href="assets/vendors/css/font-awesome.min.css"/&gt;</code></pre>
-            <div class='page-title'>
-              <h3 class='breadcrumb-header'>HTML Structured</h3>
-            </div>
-            <pre><code>&lt;!-- Page Sidebar --&gt;
+
+<h3>HTML Structured</h3>
+
+<pre><code>&lt;!-- Page Sidebar --&gt;
 &lt;div class=&#039;page-sidebar&#039;&gt;
   &lt;a class=&#039;logo-box&#039; href=&#039;index.html&#039;&gt;
   &lt;span&gt;Sidebar X&lt;/span&gt;
